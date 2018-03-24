@@ -25,9 +25,6 @@ public class Creatie{
 
         box.setVisible(stat);
         box.setBounds(x,y,width,height);
-        if(editable == true)
-        {
-            box.isEditable();
-        }
+        box.setEditable(editable);
     }
 }
