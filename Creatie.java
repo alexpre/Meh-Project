@@ -2,7 +2,6 @@ import javax.swing.*;
 
 public class Creatie{
 
-
     public static void CreatieButon(JButton btn, String text, int x, int y,int width,int height) {
 
         btn.setBounds(x,y,width,height);
@@ -15,4 +14,10 @@ public class Creatie{
         pan.setLayout(null);
     }
 
+    public static void CreatieFrame(JFrame frame,int x,int y){
+
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(x,y);
+    }
 }

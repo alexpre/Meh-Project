@@ -16,9 +16,7 @@ public class Main {
         JButton btn2 = new JButton();
         Creatie.CreatieButon(btn2,"Text2",200,200,120,35);
         JFrame frame=new JFrame();
-        frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(510,510);
+        Creatie.CreatieFrame(frame,500,500);
         pan.add(btn);
         pan.add(btn2);
         frame.add(pan);
