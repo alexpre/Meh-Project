@@ -21,7 +21,7 @@ public class Main {
         pan.add(btn);
         pan.add(btn2);
 
-        String[] sir=new String[]{"1","2","3"};
+        String[] sir=new String[]{"","ce","prost","esti"};
         JComboBox<String> box=new JComboBox<>(sir);
         box.setBounds(300,100,90,35);
         pan.add(box);
