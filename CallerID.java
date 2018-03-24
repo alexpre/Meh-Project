@@ -24,7 +24,7 @@ public class CallerID {
         Creatie.CreatiePanel(harta,485,10,350,350);
         harta.setBorder(BorderFactory.createLineBorder(Color.black));
         JPanel bazaDate = new JPanel();
-        Creatie.CreatiePanel(bazaDate,845,0,435,720);
+        Creatie.CreatiePanel(bazaDate,845,0,419,682);
         bazaDate.setBorder(BorderFactory.createLineBorder(Color.black));
         JPanel all = new JPanel();
         Creatie.CreatiePanel(all,0,0,1250,720);

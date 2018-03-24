@@ -9,19 +9,12 @@ public class Creatie{
         btn.setText(text);
     }
 
-<<<<<<< HEAD
-    public static void CreatiePanel(JPanel pan,int x,int y){
-=======
     public static void CreatiePanel(JPanel pan,int x,int y,int width,int height){
->>>>>>> Darky
 
         pan.setSize(x,y);
         pan.setLayout(null);
         pan.setVisible(true);
-<<<<<<< HEAD
-=======
         pan.setBounds(x,y,width,height);
->>>>>>> Darky
     }
 
     public static void CreatieFrame(JFrame frame,int x,int y){
@@ -29,9 +22,6 @@ public class Creatie{
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(x,y);
-<<<<<<< HEAD
-
-=======
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
 
@@ -48,6 +38,5 @@ public class Creatie{
 
         lable.setBounds(x,y,width,height);
         lable.setBorder(BorderFactory.createLineBorder(Color.black));
->>>>>>> Darky
     }
 }
