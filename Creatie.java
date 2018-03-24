@@ -3,8 +3,9 @@ import javax.swing.*;
 public class Creatie extends JButton {
 
 
-    public Creatie(int x,int y) {
+    public Creatie(String text,int x,int y) {
         JButton btn = new JButton();
-        btn.setBounds(60,400,x,y);
+        btn.setBounds(x,y,120,35);
+        btn.setText(text);
     }
 }
