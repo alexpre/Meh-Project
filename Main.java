@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
        gui();
+       gui2();
 
     }
 
@@ -19,7 +20,26 @@ public class Main {
         Creatie.CreatieFrame(frame,500,500);
         pan.add(btn);
         pan.add(btn2);
+
+        String[] sir=new String[]{"1","2","3"};
+        JComboBox<String> box=new JComboBox<>(sir);
+        box.setBounds(300,100,90,35);
+        pan.add(box);
+
         frame.add(pan);
 
     }
+    public static void gui2(){
+
+        String[] sir=new String[]{"1","2","3"};
+        JComboBox<String> box=new JComboBox<>(sir);
+        box.setBounds(300,100,80,35);
+        JFrame frame2=new JFrame();
+        Creatie.CreatieFrame(frame2,500,500);
+        JPanel pan2 = new JPanel();
+        Creatie.CreatiePanel(pan2,500,500);
+        pan2.add(box);
+        frame2.add(pan2);
+    }
+
 }

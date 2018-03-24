@@ -12,6 +12,7 @@ public class Creatie{
 
         pan.setSize(x,y);
         pan.setLayout(null);
+        pan.setVisible(true);
     }
 
     public static void CreatieFrame(JFrame frame,int x,int y){
@@ -19,5 +20,6 @@ public class Creatie{
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(x,y);
+
     }
 }
