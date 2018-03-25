@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 public class FronPage {
@@ -7,6 +9,8 @@ public class FronPage {
     public static void Front()
 
     {
+        // Draw the interface //
+
         JLabel comenzi = new JLabel();
         Creatie.CreatieLabel(comenzi,180,220,560,450);
 
@@ -26,6 +30,16 @@ public class FronPage {
         JPanel all = new JPanel();
         Creatie.CreatiePanel(all,0,0,920,720);
 
+        String data[][] ={{"1","Vera","12" + "lei"},
+                         {"2","Not Vera", "21" + "lei"}};
+
+        String column[] = {"Nr.","Pizza Name","Price"};
+
+        JTable jt = new JTable(data,column);
+        jt.setBounds(0,0,560,450);
+        comenzi.add(jt);
+
+
         all.add(comenzi);
         all.add(logareAdmin);
         all.add(vanzari);
@@ -35,5 +49,15 @@ public class FronPage {
         JFrame frame = new JFrame();
         Creatie.CreatieFrame(frame,920,720);
         frame.add(all);
+
+        // Action Listeners //
+
+        logareAdmin.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                LoginPopUp.Login();
+            }
+        });
+
     }
 }
