@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class FronPage {
+public class FronPage implements Runnable {
 
     public static void Front()
 
@@ -47,6 +47,7 @@ public class FronPage {
         all.add(logo);
 
         JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Creatie.CreatieFrame(frame,920,720);
         frame.add(all);
 
@@ -60,4 +61,16 @@ public class FronPage {
         });
 
     }
-}
+
+    @Override
+    public void run() {
+
+    }
+
+    //////////////////////// TEST //////////////////////
+
+
+
+    }
+
+
