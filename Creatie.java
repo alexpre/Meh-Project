@@ -20,7 +20,6 @@ public class Creatie{
     public static void CreatieFrame(JFrame frame,int x,int y){
 
         frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(x,y);
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
