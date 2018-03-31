@@ -14,8 +14,7 @@ public class FronPage {
     private static String password1 = "admin";
     private static JButton logOut = new JButton();
     private static JButton adaugaPizza = new JButton();
-    private static Frame loginFrame = new Frame(300,300);
-
+    private static JFrame loginFrame = new JFrame();
     public static void Front()
 
     {
@@ -93,7 +92,7 @@ public class FronPage {
                 allLogin.add(passwordField);
                 allLogin.add(login);
 
-               // Frame loginFrame = new Frame(300,300);
+                Frame loginFrame = new Frame(300,300);
 
                 loginFrame.add(allLogin);
                 loginFrame.setVisible(true);
@@ -120,7 +119,7 @@ public class FronPage {
 
                         }else{
 
-                            JOptionPane.showMessageDialog(loginFrame,"ID or Password incorect!");
+                            JOptionPane.showMessageDialog(loginFrame,"ID or password incorect!");
 
                         }
 
@@ -143,6 +142,7 @@ public class FronPage {
             }
         });
     }
+
 }
 
 
