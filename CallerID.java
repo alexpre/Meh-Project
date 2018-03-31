@@ -7,8 +7,13 @@ public class CallerID {
 
         JLabel telefon = new JLabel();
         Creatie.CreatieLabel(telefon,0,0,400,125);
+        telefon.setOpaque(true);
+        telefon.setBackground(Color.WHITE);
+
         JLabel descriere = new JLabel();
-        Creatie.CreatieLabel(descriere,60,500,700,170);
+        Creatie.CreatieLabel(descriere,40,500,700,170);
+        descriere.setOpaque(true);
+        descriere.setBackground(Color.WHITE);
 
         JComboBox<String> pizza = new JComboBox<>();
         Creatie.CreatieBox(pizza,true,false,40,200,300,60);
@@ -20,6 +25,9 @@ public class CallerID {
         JButton plus = new JButton();
         Creatie.CreatieButon(plus,"+",342,200,60,60);
 
+        JButton ok = new JButton();
+        Creatie.CreatieButon(ok,"OK.",745,635,95,35);
+
         JPanel harta = new JPanel();
         Creatie.CreatiePanel(harta,485,10,350,350);
         harta.setBorder(BorderFactory.createLineBorder(Color.black));
@@ -28,6 +36,7 @@ public class CallerID {
         bazaDate.setBorder(BorderFactory.createLineBorder(Color.black));
         JPanel all = new JPanel();
         Creatie.CreatiePanel(all,0,0,1250,720);
+        all.setBackground(Color.LIGHT_GRAY);
 
         all.add(telefon);
         all.add(descriere);
@@ -37,9 +46,9 @@ public class CallerID {
         all.add(plus);
         all.add(harta);
         all.add(bazaDate);
+        all.add(ok);
 
-        JFrame frame = new JFrame();
-        Creatie.CreatieFrame(frame,1280,720);
+        Frame frame = new Frame(1280,720);
         frame.add(all);
 
     }
