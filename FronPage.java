@@ -108,10 +108,11 @@ public class FronPage {
                         if(usernameField.getText().equals("admin") && Arrays.equals(password,correctPass)) {
 
                             Creatie.CreatieButon(adaugaPizza, "Adauga Pizza", 15, 500, 120, 30);
-                            Creatie.CreatieButon(logOut, "Deconectare", 15, 400, 120, 30);
+                            Creatie.CreatieButon(logOut, "Deconectare", 770, 639, 120, 30);
 
                             all.add(logOut);
                             all.add(adaugaPizza);
+                            all.remove(logareAdmin);
                             frame.revalidate();
                             frame.repaint();
                             loginFrame.setVisible(false);
@@ -119,7 +120,7 @@ public class FronPage {
 
                         }else{
 
-                            JOptionPane.showMessageDialog(loginFrame,"ID or password incorect!");
+                            JOptionPane.showMessageDialog(loginFrame,"Username or password incorect!");
 
                         }
 
@@ -136,6 +137,7 @@ public class FronPage {
 
                 all.remove(adaugaPizza);
                 all.remove(logOut);
+                all.add(logareAdmin);
                 frame.revalidate();
                 frame.repaint();
 
